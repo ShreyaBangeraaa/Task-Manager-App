@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
-
+body {
+  --color-background: #fafafa;
+  --color-foreground: #1f2023;
+}
+body.dark {
+  --color-background: #1f2023;
+  --color-foreground: #efefef;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +18,14 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin: auto 0;
 }
 
 .App-header {
@@ -35,4 +50,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* @media (min-width: 481px) and (max-width: 767px) {
+  #filters
+    {
+        display: none;
+    }
+} */
+.center.dark-mode {
+  --font-color: #ce2d2d;
+  --background-color: #e0cfcf;
+  --link-color: rgb(171, 185, 210);
+}
+
+
+
+.app.dark-mode {
+  background-color: rgb(18, 18, 18);
+  color: white;
+}
+.center.dark-mode {
+  background-color: rgb(41, 36, 36);
+  color: white;
+}
+.right.dark-mode {
+  background-color: rgb(18, 18, 18);
+  color: rgb(245, 243, 243);
+}
+.left.dark-mode {
+  background-color: rgb(18, 18, 18);
+  color: rgb(255, 255, 255);
+}
+.app.light-mode {
+  background-color: rgb(225, 217, 228);
+  color: white;
+}
+.center.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 55, 55);
+}
+.right.light-mode {
+  background-color: rgb(225, 217, 228);
+  color: rgb(58, 55, 55);
+}
+.left.light-mode {
+  background-color: rgb(225, 217, 228);
+  color: rgb(58, 55, 55);
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #a10dfd;
+}
+
+.custom-progress-bar {
+  background-color: #a10dfd ; /* Replace #yourColor with your desired color code */
 }

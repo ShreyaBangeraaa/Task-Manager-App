@@ -1,0 +1,28 @@
+.directorybutton{
+    background-color: #fecdd3;
+    color: #E11D48;
+    margin-left: 80%;
+    padding: 2%;
+    border-radius: 3px;
+    width: max-content;
+    }
+    
+    .outerborder{
+        height: 150%;
+        width: 40%;
+    }
+    .outerborder.list {
+        height: 10%;
+        width: 100%;
+    }
+    .outerborder.list .directorybutton{
+       
+        margin-left: 92%;
+        height: 8%;
+    }
+    .card.dark-mode{
+        background-color: rgb(28, 28, 28);
+    }
+    #completed{
+        border-radius: 25px;
+    }

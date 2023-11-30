@@ -1,0 +1,91 @@
+/* 1 */
+:root {
+    --font-color: #000000;
+    --background-color: #eee;
+    --link-color: cornflowerblue;
+  }
+  
+  /* 2 */
+  [data-theme="dark"]  {
+    --font-color: #eee;
+    --background-color: #0e0134;
+    --link-color: lightblue;
+  }
+    
+    /* 3 */
+    body {
+      background-color: var(--background-color);
+      color: var(--font-color);
+    }
+    
+    a {
+      color: var(--link-color);
+    }
+    /* Custom Dark Mode Toggle Element */
+  .toggle-theme-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .toggle-theme-wrapper span {
+      font-size: 30px;
+    }
+    
+    .toggle-theme {
+      position: relative;
+      display: inline-block;
+      height: 32px;
+      width: 70px;
+    }
+    
+    .toggle-theme input {
+      display: none;
+    }
+    
+    .slider {
+      background-color: #ccc;
+      position: absolute;
+      cursor: pointer;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      transition: 0.2s;
+    }
+    
+    .slider:before {
+      background-color: #fff;
+      bottom: 4px;
+      content: "";
+      height: 24px;
+      left: 4px;
+      position: absolute;
+      transition: 0.4s;
+      width: 24px;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(24px);
+    }
+    
+    input:checked + .slider {
+      background-color: #7C3AED;
+    }
+    
+    .slider.round {
+      border-radius: 30px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+    @media (prefers-color-scheme: 'dark') {
+      :root {
+        /* Dark mode variables go here */
+        --font-color: #eee;
+    --background-color: #2f0d94;
+    --link-color: lightblue;
+      }
+    }

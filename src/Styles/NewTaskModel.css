@@ -1,0 +1,61 @@
+#exampleModal .fade.dark-mode{
+    background-color: rgb(64, 3, 90);
+    color: white;
+}
+input[type="checkbox"] {
+    width: 22px;                         /* Set width */
+    height: 22px;                        /* Set height */
+
+  }
+
+
+.add-task-button.light-mode{
+    height: 13rem;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 6%;
+    background-color: white;
+    color: black;
+    border: 2px dashed rgb(56, 55, 55);
+}
+.add-task-button.light-mode.list{
+    height: 100%;
+    width: 150%;
+    margin-left: 1%;
+    margin-top: 0%;
+    padding: 4%;
+    background-color: white;
+    color: black;
+    border: 2px dashed rgb(56, 55, 55);
+}
+
+.add-task-button.light-mode:hover {
+    background-color: rgb(183, 183, 183);
+    border: 2px dashed rgb(56, 55, 55);
+}
+.add-task-button.dark-mode{
+    
+    height: 13rem;
+    width: 40%;
+    margin-left: 2%;
+    margin-top: 6%;
+    background-color: rgb(28, 28, 28);
+    border: 2px dashed rgb(160, 156, 156);
+    color: white;
+}
+
+.add-task-button.dark-mode.list{
+    
+    height: 100%;
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 0%;
+    background-color: rgb(28, 28, 28);
+    border: 2px dashed rgb(160, 156, 156);
+    color: white;
+}
+
+.add-task-button.dark-mode:hover {
+    background-color: rgb(53, 53, 53);
+    border: 2px dashed rgb(160, 156, 156);
+}
