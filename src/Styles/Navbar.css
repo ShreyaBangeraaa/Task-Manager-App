@@ -1,5 +1,6 @@
 .nav-item{
     font-size: 1.2rem;
+    font-style: bold;
     
     
 }
@@ -13,7 +14,7 @@
 }
 
 .active {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     background-color: #EDE9FE;
     color: black;
     border-right: solid 5px;

@@ -21,9 +21,6 @@ function App() {
   };
   
 
-
-  
-
 return (
   <NotesState>
   

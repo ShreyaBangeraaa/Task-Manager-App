@@ -27,9 +27,12 @@ const Card = (props) => {
               {props.date}
             </time>
             <div className="row d-flex my-3">
+              
               <button
                 type="button"
-                className="btn btn-primary col-6"
+                className={`btn col-6 ${
+                  props.completed ? "btn-primary" : "btn-light-red"
+                }`}
                 id="completed"
                 onClick={() => {
                   props.toggleStatus(props.index);
@@ -37,27 +40,27 @@ const Card = (props) => {
               >
                 {props.completed ? "Completed" : "Incomplete"}
               </button>
+
               <i
-                className={`fa star ${
-                  props.important ? "fa-star" : "fa-star-o"
-                } my-2 col-2 fs-4`}
+                className={`fa star clickable ${props.important ? "fa-star" : "fa-star-o"} my-2 col-2 fs-4`}
                 onClick={() => {
                   props.toggleFav(props.index);
                 }}
                 id={`${props.id}`}
               ></i>
               <i
-                className={`fa fa-trash my-2 col-2 fs-4`}
+                className={`fa fa-trash clickable my-2 col-2 fs-4`}
                 aria-hidden="true"
                 onClick={() => {
                   deleteTask(props.id);
                 }}
               ></i>
               <i
-                className="fa fa-edit my-2 col-2 fs-4"
+                className="fa fa-edit clickable my-2 col-2 fs-4"
                 aria-hidden="true"
                 onClick={() => updateTask(task)}
               ></i>
+
             </div>
           </div>
         </div>

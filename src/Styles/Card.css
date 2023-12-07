@@ -24,5 +24,22 @@
         background-color: rgb(28, 28, 28);
     }
     #completed{
-        border-radius: 25px;
+        border-radius: 15px;
     }
+   
+.btn-light-red {
+    background-color: #f75454; 
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition over 0.3 seconds */
+  }
+  
+  .btn-light-red:hover {
+    background-color: #ff9999; 
+    color: #c9302c; 
+  }
+.fa {
+    cursor: pointer;
+  }
+.clickable {
+    cursor: pointer;
+  }

@@ -171,9 +171,9 @@ export default function CenterSection(props) {
         <div className="col-1 my-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
+            width="28"
+            height="26"
+            fill="#A10DFD"
             // onClick={onClick}
             className="bi bi-bell-fill "
             viewBox="0 0 16 16"

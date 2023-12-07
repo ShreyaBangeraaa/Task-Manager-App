@@ -2,6 +2,8 @@ import React from "react";
 // import Button from "./Button";
 import { useContext } from "react";
 import NotesContext from "../NotesContext/NoteContext.js";
+import '../App.css';
+
 
 export default function Progressbar() {
   const { tasks } = useContext(NotesContext);
@@ -47,7 +49,7 @@ export default function Progressbar() {
         // style={{width:"80%"}}
       >
         <div
-          className="progress-bar bg-info"
+          className="progress-bar custom-progress-bar"
           style={{ width: `${(completed / total) * 100}%` }}
         ></div>
       </div>
